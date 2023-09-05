@@ -9,7 +9,7 @@ app.use(express.static("public"))
 app.set('view engine','ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 
-mongoose.connect("mongodb://127.0.0.1:27017/productsDB")
+mongoose.connect("mongodb+srv://Cluster74109:XEVdXU5sclpR@cluster74109.ue32tcy.mongodb.net/productsDB")
 
 const productSchema = new mongoose.Schema({
     image: String,
