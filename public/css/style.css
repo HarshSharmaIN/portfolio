@@ -1,0 +1,412 @@
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% - var(--gap)));
+      }
+  }
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    font-family: 'Oxygen', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(210, 195, 195);
+}
+a:hover{
+    color: #818181;
+}
+hr{
+    margin: 0 auto;
+    border: dotted #baaed9 8px;
+    border-bottom: none;
+    width: 40%;
+}
+.text-center{
+    text-align: center;
+}
+.center-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hamburger{
+    display: none;
+    background-color: rgb(52, 52, 52);
+}
+.iconham{
+    margin: 2px;
+    width: 20px;
+    height: 3px;
+    background: white;
+}
+.blue{
+    background: linear-gradient(to right,#6c4ac7,#9485c0,#bcb0d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.white{
+    color: white;
+}
+.grey{
+    background: linear-gradient(to right,#838284,#a9a6ae,#b4b4ba);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.font-600{
+    font-weight: 600;
+}
+.body{
+    background-image: url(../assets/background.png);
+    background-size: cover;
+}
+.head{
+    height: 85vh;
+    backdrop-filter: blur(3px);
+}
+.logo{
+    height: 8vh;
+    margin: 2vw;
+}
+.nav{
+    justify-content: space-between;
+    height: 15vh;
+    background: transparent;
+    padding-right: 2vw;
+    font-size: 1.2rem;
+    background-color: #000;
+    transition: 0.5s;
+}
+.links{
+    display: flex;
+    gap: 2vw;
+}
+.scroll-nav{
+    background-color: rgb(52, 52, 52) !important;
+    height: 10vh !important;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.scroll-logo{
+    height: 8vh !important;
+}
+.container{
+    height: 30vh;
+    width: 34vw;
+    position: absolute;
+    top: 20vh;
+    left: 6vw;
+}
+.container>p{
+    font-size: 4rem;
+    margin-bottom: 5vh;
+}
+.discover{
+    height: 7vh;
+    width: 8vw;
+    margin-right: 2vw;
+    background-color: #0b36a8;
+}
+.discover:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: antiquewhite;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.discover-main{
+    justify-content: space-between;
+    height: 50vh;
+    padding: 0 10vw;
+    background-color: #eff2fa;
+}
+.discover-first{
+    line-height: 2;
+    width: 25vw;
+    font-size: 1.1rem;
+}
+.discover-about{
+    line-height: 2;
+    font-size: 500;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    animation: marquee 15s linear infinite;
+    min-width: 125%;
+    flex-shrink: 0;
+}
+.skill-hr{
+    margin: 3.5vh auto;
+}
+.markee{
+    margin: 6vh 0;
+}
+.marquee{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    --gap: 1rem;
+    user-select: none;
+    gap: var(--gap);
+}
+.marquee--hover-pause:hover .skills {
+    animation-play-state: paused;
+}
+.services{
+    height: 90vh;
+    background-color: #eff2fa;
+}
+.services-top{
+    height: 20vh;
+}
+.services>h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.services-top{
+    margin: 0 25vw;
+    font-size: 1.1rem;
+}
+.cardbase{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardbase p{
+    line-height: 1.5;
+}
+.cardbase img{
+    height: 20vh;
+    margin: 0 5vw;
+}
+.cardbase>div{
+    position: relative;
+    height: 45vh;
+    width: 20vw;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+.card1-inner:hover,.card2-inner:hover,.card3-inner:hover{
+    transform: rotateY(180deg);
+}
+.card1, .card1-back ,.card2, .card2-back ,.card3, .card3-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card1-back,.card2-back,.card3-back {
+    border: 2px dotted rgb(212, 208, 208);
+    border-radius: 25px;
+    height: 45vh;
+    width: 20vw;
+    transform: rotateY(180deg);
+    align-items: center;
+}
+.card1,.card2,.card3{
+    border: 2px dotted rgb(212, 208, 208);
+    border-radius: 25px;
+    height: 45vh;
+    width: 20vw;
+}
+.card-button{
+    height: 5vh;
+    width: 5vw;
+    background-color: #0b36a8;
+    color: antiquewhite;
+}
+.card-button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #eff2fa;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.projects>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 7vh 0;
+}
+.projects p{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50vw;
+    margin: 0 auto;
+}
+.project{
+    height: 100vh;
+}
+.imgzoom{
+    width: 70vw;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.project img{
+    width: 69vw;
+    height: 77vh;
+    transition: 0.2s all ease-in-out;
+    border: 2px solid #6c4ac7;
+    border-radius: 32px;
+}
+.project img:hover{
+    transform: scale(1.3);
+}
+.word-base{
+    padding-top: 5vh;
+    background-color: #eff2fa;
+}
+.words{
+    background-color: #eff2fa;
+}
+.word-base h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.word{
+    font-size: 1.2rem;
+    text-decoration: wavy;
+    line-height: 2;
+    display: inline-block;
+    width: 15vw;
+    margin: 10vh 2.5vw;
+    border: 2px dotted #6c4ac7;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    padding: 2vh 2vw;
+}
+.word h4{
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5rem;
+}
+.contactus{
+    height: 90vh;
+    align-items: center;
+}
+.contactus:hover{
+    background: linear-gradient(to right,#29e39c,#67dabf,#49e9de);
+}
+.contactus input{
+    width: 15vw;
+    padding: 2vh 2vw;
+    border: 2px solid #b1a8a8;
+    border-radius: 25px;
+}
+.contactus textarea{
+    height: 20vh;
+    width: 15vw;
+    border: 2px solid #b1a8a8;
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    padding: 1vh 1vw;
+}
+.namebox{
+    width: 50vw;
+}
+.inputname{
+    height: 30vh;
+}
+.textarea{
+    height: 30vh;
+}
+.contactus button{
+    padding: 2vh 3vw;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: #0b36a8;
+    color: rgb(245, 245, 245);
+    border: 1px solid rgb(122, 119, 119);
+    font-weight: 600;
+}
+.contactus button:hover{
+    border: 1px solid rgb(122, 119, 119);
+    background-color: white;
+    color: rgb(90, 89, 87);
+    transition: 0.5s;
+}
+.contactus hr{
+    border-color: #6c4ac7;
+}
+.footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #eff2fa;
+}
+.icons{
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+.footer p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.fa-brands:hover {
+    color: #6c4ac7;
+}
+.merchandise{
+    height: 70vh;
+    gap: 5vh;
+    background-color: #eff2fa;
+    padding-top: 5vh;
+}
+.tees{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tee{
+    height: 20vh;
+    transition: 0.4s;
+}
+.tee:hover{
+    border-radius: 25px;
+}
+.merch-btn{
+    margin: 0 auto;
+    padding: 3vh 3vw;
+    background-color: #0b36a8;
+    transition: 0.5s;
+}
+.merch-btn:hover{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: antiquewhite;
+}
+.mart{
+    padding: 10vh 0;
+}
+.mart>hr{
+    margin: 5vh auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+.cart{
+    padding: 10vh;
+    gap: 10vh;
+}
+.cartitem{
+    border: 2px solid rgb(181, 175, 175);
+    border-radius: 20px;
+}
+.user-msg{
+    width: 100%;
+}

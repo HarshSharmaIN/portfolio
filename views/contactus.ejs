@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<div class="center-column contactus" id="contactus">
+    <h1>Contact Us</h1>
+    <hr>
+    <form action="/contactus" method="post">
+    <div class="namebox center-row">
+            <div class="inputname center-column">
+                <h4 class="blue">Name:</h4>
+                <input type="text" placeholder="Name" name="name">
+                <h4 class="blue">E-mail:</h4>
+                <input type="email" name="email" id="" placeholder="Name@example.com">
+            </div>
+            <div class="textarea center-column">
+                <h4 class="blue">Suggestions:</h4>
+                <textarea name="suggestions" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <h1 class="blue font-600">User Messages</h1>
+    <hr>
+    <% message.forEach(text=>{ %>
+        <div class="user-msg text-center center-row">
+            <span><%= text.name %></span>
+            <span><%= text.email %></span>
+            <span><%= text.suggestions %></span>
+        </div>
+    <% }) %>
+</div>
+
+<%- include('partials/footer') %>

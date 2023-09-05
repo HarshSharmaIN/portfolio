@@ -1,0 +1,34 @@
+<%- include('partials/header') -%>
+
+    <div class="cart text-center center-column">
+        <h1>Your Item's</h1>
+        <hr>
+        <% if (cart.length===0) { %>
+            <h1 class="blue">Your Cart is Empty.</h1>
+            <% } else { %>
+                <% cart.forEach((item,index)=>{ %>
+                    <div class="cartitem center-row">
+                        <span>
+                            <%= index+1 %>.
+                        </span>
+                        <div>
+                            <h1>
+                                <%= item.name %>
+                            </h1>
+                            <img class="tee" src="<%= item.image %>" alt="">
+                        </div>
+                        <p>
+                            <%= item.size %>
+                        </p>
+                        <span>₹<%= item.price %></span>
+                        <form action="/delete" method="post">
+                            <button type="submit" style="color: red;" name="id" value="<%= item._id %>">Delete</button>
+                        </form>
+                    </div>
+                <% }) %>
+            <% } %>
+        <hr>
+        <h1>Thank You!</h1>
+    </div>
+
+    <%- include('partials/footer') -%>

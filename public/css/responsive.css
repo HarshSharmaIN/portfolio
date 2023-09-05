@@ -1,0 +1,313 @@
+@media only screen and (max-width:1440px){
+    .logo{
+        margin-left: 5vw;
+        height: 10vh;
+    }
+    .container>p{
+        font-size: 2rem;
+    }
+    .discover-main{
+        padding: 5vw;
+        gap: 3vw;
+    }
+    .markee{
+        height: 35vh;
+    }
+    .services{
+        height: 100vh;
+    }
+    .services-top{
+        margin: 0 auto;
+        width: 60vw;
+        gap: 4vh;
+    }
+    .projects>p{
+        margin: auto;
+        width: 80vw;
+    }
+    .card1,.card2,.card3,.card1-back,.card2-back,.card3-back{
+        height: 50vh;
+        width: 20vw !important;
+    }
+    .word{
+        line-height: 1.5;
+        width: 15vw;
+    }
+    .word>h4{
+        font-size: 1.2rem;
+    }
+    .contactus{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width:1200px){
+    .discover-first{
+        font-size: 1rem;
+    }
+    .discover-first>h1{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .discover-first{
+        font-size: 0.8rem;
+    }
+    .discover-about{
+        font-size: 0.8rem;
+    }
+    .services-top{
+        font-size: 1rem;
+        width: 70vw;
+    }
+    .card1,.card2,.card3,.card1-back,.card2-back,.card3-back{
+        width: 25vw;
+    }
+}
+@media only screen and (max-width:768px){
+    .discover-first>h1{
+        font-size: 1rem;
+    }
+    .card1,.card2,.card3,.card1-back,.card2-back,.card3-back{
+        width: 25vw !important;
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .projects>p{
+        font-size: 1rem;
+    }
+    .word-base{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .word-base>h1{
+        padding: 2vh 0;
+    }
+    .words{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    .word{
+        font-size: 1rem;
+        width: 40vw;
+        height: 30vh;
+        margin: 5vh 3vw;
+    }
+}
+@media only screen and (max-width:426px){
+    .hamburger{
+        display: block;
+    }
+    .body{
+        background-image: url(../assets/background-mobile.jpg);
+    }
+    .nav{
+        background-color: rgb(52, 52, 52);
+        height: 10vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .logo{
+        height: 8vh;
+        width: 30vw;
+    }
+    .links{
+        height: 32vh;
+        width: 92vw;
+        padding-top: 2vh;
+        padding-left: 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        position: absolute;
+        top: 10vh;
+        right: 0.01vw;
+        background-color: rgb(52, 52, 52); 
+    }
+    .hiddenResp{
+        display: none;
+    }
+    .container{
+        width: 80vw;
+    }
+    .container>p{
+        width: 80vw;
+        font-size: 2rem;
+    }
+    .discover{
+        width: 20vw;
+    }
+    .contact{
+        color: white;
+        width: 10vw;
+    }
+    .discover-main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 90vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .discover-first{
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+    .discover-first>h1{
+        font-size: 1.2rem;
+    }
+    .discover-about{
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+    .markee{
+        height: 20vh;
+    }
+    .marquee{
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        user-select: none;
+    }
+    .services{
+        margin-top: 5vh;
+        height: 210vh;
+    }
+    .services h1{
+        font-size: 2rem;
+    }
+    .services p{
+        width: 70vw;
+        font-size: 0.8rem;
+        margin: auto auto;
+    }
+    .icons{
+        margin-left: 15vw;
+    }
+    .icons img{
+        height: 32px;
+    }
+    .cardbase{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .cardbase div{
+        margin: 2vh auto;
+        height: 55vh;
+        width: 90vw;
+    }
+    .card1,.card2,.card3,.card1-back,.card2-back,.card3-back{
+        margin: 3vh 15vw !important;
+        height: 50vh;
+        width: 60vw !important;
+    }
+    .card1>hr,.card2>hr,.card3>hr,.card1-back>hr,.card2-back>hr,.card3-back>hr{
+        margin: 3vh auto;
+    }
+    .cardbase p{
+        width: 45vw;
+    }
+    .card1 img,.card2 img,.card3 img{
+        margin: 2vh auto;
+        width: 35vw;
+    }
+    .card1-back button,.card2-back button,.card3-back button{
+        width: 20vw;
+    }
+    .projects h1{
+        font-size: 2rem;
+        margin: 3vh 0;
+    }
+    .projects p{
+        width: 90vw;
+        font-size: 0.8rem;
+    }
+    .uc{
+        content: url(../assets/onlinebank-mobile.jpg);
+    }
+    .ttt{
+        content: url(../assets/calculator-mobile.jpg);
+    }
+    .tab{
+        content: url(../assets/todolist-mobile.jpg);
+    }
+    .word-base{
+        padding: 5vh 0;
+    }
+    .word-base h1{
+        font-size: 1.2rem;
+        width: 90vw;
+        margin: 1vh auto;
+    }
+    .word div{
+        width: 80vw;
+        margin: 2vh 6vw;
+        font-size: 0.8rem;
+    }
+    .namebox{
+        flex-direction: column;
+    }
+    .contactus{
+        height: 80vh;
+    }
+    .contactus h1{
+        font-size: 1.5rem;
+        margin: 2vh 0;
+    }
+    .contactus input{
+        width: 60vw;
+    }
+    .contactus textarea{
+        height: 20vh;
+        width: 60vw;
+    }
+}
+@media only screen and (max-width:376px){
+    .discover-main{
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+    .services h1{
+        font-size: 1.6rem;
+    }
+    .card1,.card2,.card3,.card1-back,.card2-back,.card3-back{
+        height: 45vh;
+        width: 70vw !important;
+        margin: 0 10vw !important;
+    }
+    .card1>p,.card2>p,.card3>p,.card1-back>p,.card2-back>p,.card3-back>p{
+        width: 71vw !important;
+    }
+    .words{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .word-base>h1{
+        padding-top: 0;
+    }
+    .word{
+        height: 17vh;
+        width: 90vw;
+        margin: auto auto;
+    }
+    .footer>p{
+        font-size: 1rem;
+    }
+    .tee {
+        height: 15vh;
+    }
+    .cart{
+        padding: 2vh 3vw;
+    }
+    .cartitem{
+        width: 90vw;
+    }
+    .cartitem h1{
+        font-size: 0.8rem;
+    }
+}
