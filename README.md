@@ -33,4 +33,3 @@ This Web app is hosted on codesandbox and the live website can be viewed through
 ```bash
 https://vw4fg3-3000.csb.app/
 ```
->>>>>>> 41febe19456836bf2ec95ef1dde37f546993e28f
